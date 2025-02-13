@@ -33,6 +33,7 @@ function cssTask() {
     .src([
       "node_modules/normalize.css/normalize.css",
       "node_modules/slick-carousel/slick/slick.css",
+      "node_modules/animate.css/animate.css",
     ])
     .pipe(concat("_libs.scss"))
     .pipe(gulp.dest("app/scss"))
