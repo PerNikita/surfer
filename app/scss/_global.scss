@@ -1,6 +1,16 @@
+html {
+  box-sizing: border-box;
+}
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 body {
   font-family: "Fira Sans", sans-serif;
   font-weight: 400;
+  background-color: #171919;
+  color: #fff;
+  text-transform: uppercase;
 }
 
 a {
@@ -14,13 +24,17 @@ ul, li {
   padding: 0;
 }
 
-.subtitle-left {
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.headline-left {
   display: inline-block;
   font-size: 22px;
   line-height: 32px;
   letter-spacing: 0.33em;
   text-transform: uppercase;
-  color: #fff;
   opacity: 0.5;
   padding-left: 103px;
   position: relative;
@@ -32,5 +46,48 @@ ul, li {
     background-color: #fff;
     left: 0;
     top: 50%;
+  }
+}
+
+.title {
+  span {
+    position: relative;
+font-weight: 800;
+font-size: 200px;
+
+
+color: rgba(#fff, .02);
+transform: translateX(-50px);
+  }
+  h3 {
+    display: inline-block;
+    position: absolute;
+    top:0;
+    right:-5px;
+    color: #fff;
+    font-size: 80px;
+    margin: 0;
+    &::after {
+      display: inline-block;
+      content: "";
+      position: absolute;
+      top:0;
+      right:0;
+      width: 80px;
+      height: 1px;
+      background:  #4af6cd;
+    }
+  }
+}
+.subtitle {
+  display: inline-block;
+  text-align: right;
+  &__head {
+    font-weight: 800;
+    font-size: 40px;
+    padding-right: 10px;
+    span {
+      font-weight: 100;
+    }
   }
 }

@@ -25,8 +25,6 @@ header {
   right: 80px;
   bottom: 116px;
   text-align: right;
-  color: #fff;
-  text-transform: uppercase;
 }
 
 .slider-item__info-title {
@@ -69,7 +67,6 @@ header {
   bottom: 40px;
   width: 100%;
   max-width: 920px;
-  color: #fff;
   .slick-current {
     .dots-box {
       border-top: 4px solid variables.$green;
@@ -93,6 +90,7 @@ header {
   &__name {
     font-weight: 300;
     font-size: 19px;
+    text-transform: capitalize;
   }
 }
 .header__aside {
@@ -103,7 +101,6 @@ header {
   z-index: 5;
   border-right: 1px solid rgba(#fff, 0.25);
   height: 100vh;
-  color: #fff;
 }
 .header__title {
   font-weight: 800;
@@ -111,8 +108,6 @@ header {
   max-width: 467px;
   /* line-height: 156px; */
   line-height: 78%;
-  text-transform: uppercase;
-  color: #fff;
   opacity: 0.07;
   position: absolute;
   top: 0;
@@ -123,11 +118,12 @@ header {
 .menu {
   padding-top: 40px;
   a {
-    color: #fff;
     span {
       display: block;
       font-weight: 500;
       font-size: 12px;
+      text-transform: capitalize;
+      color: #fff;
 
       /* line-height: 14px; */
       line-height: 117%;
@@ -144,8 +140,6 @@ header {
 
   /* line-height: 64px; */
   line-height: 89%;
-  text-transform: uppercase;
-  color: #fff;
   margin-bottom: 30px;
   span {
     margin-top: 13px;
@@ -171,9 +165,9 @@ header {
   /* line-height: 14px; */
   line-height: 117%;
   letter-spacing: 0.09em;
-  color: #fff;
   position: relative;
   padding-left: 19px;
+  text-transform: capitalize;
   &::before {
     content: "";
     position: absolute;
@@ -197,5 +191,21 @@ header {
   left: 210px;
   bottom: 40px;
   z-index: 3;
+}
+
+.line-animation {
+  stroke-dashoffset: 600;
+  stroke-dasharray: 600;
+  animation: animdash 5s infinite 6s;
+}
+
+@keyframes animdash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.surf {
+  padding: 160px 0 210px;
 }
 //@use "media";
