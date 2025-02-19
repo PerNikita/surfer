@@ -1,3 +1,5 @@
+@use "variables";
+
 html {
   box-sizing: border-box;
 }
@@ -18,7 +20,8 @@ a {
   text-decoration: none;
 }
 
-ul, li {
+ul,
+li {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -52,18 +55,17 @@ ul, li {
 .title {
   span {
     position: relative;
-font-weight: 800;
-font-size: 200px;
+    font-weight: 800;
+    font-size: 200px;
 
-
-color: rgba(#fff, .02);
-transform: translateX(-50px);
+    color: rgba(#fff, 0.02);
+    transform: translateX(-50px);
   }
   h3 {
     display: inline-block;
     position: absolute;
-    top:0;
-    right:-5px;
+    top: 0;
+    right: -5px;
     color: #fff;
     font-size: 80px;
     margin: 0;
@@ -71,11 +73,11 @@ transform: translateX(-50px);
       display: inline-block;
       content: "";
       position: absolute;
-      top:0;
-      right:0;
+      top: 0;
+      right: 0;
       width: 80px;
       height: 1px;
-      background:  #4af6cd;
+      background: #4af6cd;
     }
   }
 }
@@ -88,6 +90,39 @@ transform: translateX(-50px);
     padding-right: 10px;
     span {
       font-weight: 100;
+    }
+  }
+}
+
+.btn {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 90%;
+  color: #fff;
+  span {
+    padding: 17px 57px 15px 17px;
+    background-color: variables.$green;
+    display: inline-block;
+    margin-left: 19px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 1px;
+      background-color: #fff;
+      top: 50%;
+      left: -10%;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 25px;
+      height: 21px;
+      background-image: url(../img/arrows-right.svg);
+      top: 50%;
+      right: 17px;
+      transform: translateY(-50%);
     }
   }
 }
