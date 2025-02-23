@@ -245,3 +245,18 @@ input[type=number]
   // border: none;
   // font-size: 28px;
 }
+
+.star-list {
+  display: flex;
+  align-items: center;
+li {
+  display: inline-block;
+  padding-left: 11px;
+  &:first-child {
+    padding-left: 0;
+  }
+}
+img {
+  position: static;
+}
+}

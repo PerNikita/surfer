@@ -522,6 +522,7 @@ header {
     text-align: center;
   }
 }
+
 .holder-slider__info {
   display: flex;
   justify-content: space-around;
@@ -571,5 +572,32 @@ header {
     bottom: -8px;
   }
 }
+
+.shop{
+  background-image: url(../img/shop-bg.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  padding: 60px 0 0 132px;
+}
+
+.shop__slider {
+  padding-left: 132px;
+}
+
+.shop__slider-inner {
+  display: flex;
+}
+
+.shop__slider-info {
+  max-width: 480px;
+  margin-right: 40px;
+  width: 100%;
+}
+
+.descr__head-shop{
+  max-width: 340px;
+  margin-bottom: 47px;
+}
+
 
 //@use "media";
