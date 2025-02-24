@@ -464,14 +464,14 @@ header {
 .holder {
   background-image: url(../img/travel-bg.png);
   &.sleep {
-    background-image: url(../img/frangipani.png)
+    background-image: url(../img/frangipani.png);
   }
   background-position: bottom right;
   background-repeat: no-repeat;
   background-size: auto;
   .slider-arrows {
     top: 225px;
-    opacity: .25;
+    opacity: 0.25;
   }
 }
 
@@ -498,8 +498,8 @@ header {
         top: 0;
       }
       .holder__star-list {
-          display: flex;
-          align-items: center;
+        display: flex;
+        align-items: center;
         li {
           display: inline-block;
         }
@@ -573,7 +573,7 @@ header {
   }
 }
 
-.shop{
+.shop {
   background-image: url(../img/shop-bg.png);
   background-repeat: no-repeat;
   background-position: right center;
@@ -592,12 +592,106 @@ header {
   max-width: 480px;
   margin-right: 40px;
   width: 100%;
+  padding-top: 150px;
 }
 
-.descr__head-shop{
+.descr__head-shop {
   max-width: 340px;
   margin-bottom: 47px;
 }
 
+.shop__slider-price {
+  font-weight: 800;
+  font-size: 32px;
+  /* line-height: 40px; */
+  line-height: 222%;
+  margin-bottom: 67px;
+  sup {
+    font-size: 18px;
+  }
+}
 
+.shop__slider-content {
+  padding-left: 170px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.shop__extras {
+  padding-left: 150px;
+}
+
+.shop__extras-inner {
+  display: flex;
+}
+
+.shop__extras-title {
+  font-weight: 800;
+  font-size: 28px;
+  /* line-height: 40px; */
+  line-height: 143%;
+  margin-bottom: 25px;
+}
+
+.shop__extras-box {
+  text-align: center;
+  margin-right: 57px;
+  img {
+  }
+}
+.shop__extras-name {
+  font-size: 18px;
+  /* line-height: 22px; */
+  line-height: 122%;
+  letter-spacing: 0.44em;
+  text-align: right;
+  opacity: 0.5;
+}
+
+.shop__extras-price {
+  font-weight: 800;
+  font-size: 18px;
+
+  /* line-height: 40px; */
+  line-height: 222%;
+}
+
+.shop__extras-img {
+  min-height: 105px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 35px;
+  justify-content: center;
+}
+
+.surfboard {
+  position: relative;
+}
+
+.surfboard-box {
+  position: absolute;
+  right: 15px;
+  top: 215px;
+}
+
+.surfboard-box__circle {
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  position: relative;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.circle-row {
+  position: absolute;
+  background-color: variables.$green;
+  width: 12px;
+  height: 2px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 //@use "media";
