@@ -93,4 +93,7 @@ $(function () {
       nextArrow:
         '<img class="slider-arrows slider-arrows__right"src="img/arrows-right.svg" alt="" />',
       });
+      $('.menu-btn').on('click', function() {
+        $('.menu').toggleClass('active')
+      })
 });
