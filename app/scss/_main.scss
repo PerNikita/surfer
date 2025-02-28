@@ -112,9 +112,10 @@ header {
   }
   
   .menu-btn {
+    display: none;
     justify-content: center;
     align-items: center;  
-    display: flex;
+    
     width: 60px;
     height: 60px;
     border-radius: 50%;
