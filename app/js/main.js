@@ -14,6 +14,12 @@ $(function () {
     slidesToScroll: 4,
     asNavFor: '.header__slider',
     focusOnSelect: true,
+    responsive: [
+      {
+        breakpoint: 961,
+        settings: "unslick",
+      }
+    ],
   });
 
   $('.surf-slider').slick({
@@ -25,6 +31,30 @@ $(function () {
     '<img class="slider-arrows slider-arrows__right"src="img/arrows-right.svg" alt="" />',
     focusOnSelect: true,
     asNavFor: '.slider-map',
+    responsive: [
+      {
+        breakpoint: 1210,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 720,
+        settings: {
+          slidesToShow: 1,
+        }
+      },
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ]
   })
   $('.slider-map').slick({
     slidesToShow: 8,
@@ -32,6 +62,28 @@ $(function () {
     arrows: false,
     asNavFor: '.surf-slider',
     focusOnSelect: true,
+    responsive: [
+      {
+        breakpoint: 1103,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 2,
+          centerMode: true,
+        }
+      },
+      {
+        breakpoint: 720,
+        settings: {
+          slidesToShow: 1,
+          centerMode: true,
+        }
+      },
+    ]
   })
   $('.holder__slider').slick({
     infinite: true,
