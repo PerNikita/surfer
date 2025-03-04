@@ -51,9 +51,13 @@ $(function () {
           slidesToShow: 1,
         }
       },
-      // You can unslick at a given breakpoint now by adding:
-      // settings: "unslick"
-      // instead of a settings object
+      {
+        breakpoint: 426,
+        settings: {
+          slidesToShow: 1,
+          centerMode: false
+        }
+      },
     ]
   })
   $('.slider-map').slick({
