@@ -33,7 +33,7 @@ $(function () {
     asNavFor: '.slider-map',
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1103,
         settings: {
           slidesToShow: 3,
         }
@@ -72,7 +72,7 @@ $(function () {
         }
       },
       {
-        breakpoint: 720,
+        breakpoint: 480,
         settings: {
           slidesToShow: 1,
         }

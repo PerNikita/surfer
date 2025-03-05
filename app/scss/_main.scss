@@ -614,7 +614,7 @@ header {
 }
 
 .shop__slider {
-  padding-left: 132px;
+  padding-left: 0;
 }
 
 .shop__slider-inner {
@@ -745,6 +745,7 @@ header {
   position: relative;
   background-color: #fff;
   cursor: pointer;
+  z-index: 5;
   &.active {
     .circle-row + .circle-row {
       transform: translate(-50%, -50%) rotate(0);
