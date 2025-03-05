@@ -415,7 +415,11 @@ header {
   box-shadow: 0 0 35px 0 rgba(74, 246, 205, 0.84);
 }
 .slider-dots__content {
-  display: none;
+    display: none;
+    width: 285px;
+    padding: 28px 31px 0 32px;
+    background-color: rgba(#0f1010, 0.7);
+    border-radius: 6px;
 }
 
 .slider-dots {

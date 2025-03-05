@@ -33,10 +33,9 @@ $(function () {
     asNavFor: '.slider-map',
     responsive: [
       {
-        breakpoint: 1210,
+        breakpoint: 1024,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 1,
         }
       },
       {
@@ -46,18 +45,11 @@ $(function () {
         }
       },
       {
-        breakpoint: 720,
+        breakpoint: 480,
         settings: {
           slidesToShow: 1,
         }
-      },
-      {
-        breakpoint: 426,
-        settings: {
-          slidesToShow: 1,
-          centerMode: false
-        }
-      },
+      }
     ]
   })
   $('.slider-map').slick({
@@ -77,14 +69,12 @@ $(function () {
         breakpoint: 900,
         settings: {
           slidesToShow: 2,
-          centerMode: true,
         }
       },
       {
         breakpoint: 720,
         settings: {
           slidesToShow: 1,
-          centerMode: true,
         }
       },
     ]
